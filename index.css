@@ -1,0 +1,141 @@
+#wrapper {
+    display: grid;
+    grid-template:
+        "header header header" 100px
+        "nav nav nav" auto
+        "homehero homehero homehero" auto
+        "main main righttext" auto
+        / 175px 1fr 36%;
+}
+body {
+    background-color: #EAEAEA;
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: #002171;
+    color: #FFFFFF;
+    height: 120px;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 3em;
+    background-image: linear-gradient(to right, #4D00D1 ,#5D3FD3);
+    grid-area: header;
+}
+nav {
+    font-weight: bold;
+    padding: 1.0em;
+    font-size: 120%;
+    grid-area: nav;
+    background-color: #002171;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    text-decoration: none;
+}
+nav a:link {
+    color: #9F2B68;
+}
+nav a:visited {
+    color: #301934;
+}
+nav a:hover {
+    color: #CBC3E3;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3em;
+    letter-spacing: 0.25em;
+}
+h2 {
+    color: #1976D2;
+    font-family: Georgia, "Times New Roman", serif;
+    text-shadow: 1px 1px 1px #CCCCCC;
+    text-align: center;
+}
+h3 {
+    color: #000033;
+    font-family: Georgia, "Times New Roman", serif;
+}
+dt {
+    color: #002171;
+}
+.boldp {
+    color: #1976D2;
+    font-weight: bold;
+}
+footer {
+    display: none;
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    padding: 2em;
+    background-color: #FFFFFF;
+    grid-area: footer;
+}
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: #90C7E3;
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: 3px 3px 3px #333333;
+    border: 1px solid #000033;
+    background-image: linear-gradient(to bottom, #5D3FD3, #4D00D1);
+}
+main {
+    display: block;
+    background-color: #D8BFD8;
+    overflow: auto;
+    grid-area: main;
+}
+#homehero {
+    height: 500px;
+    background-image: url(Images/1.jpg);
+    background-size: 100% 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-area: homehero;
+}
+#headerhero {
+    height: 300px;
+    width: 75px;
+    background-image: url(Images/2.jpg);
+    background-size: 100% 100%;
+    background-position: right;
+}
+* {
+    box-sizing: border-box;
+}
+section {
+    float: left;
+    width: 50%;
+    height: 129px;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: #BDB5D5;
+    padding-top: 50px;
+}
+#rightext {
+    font-weight: bold;
+    font-size: 130%;
+    color: #CBC3E3;
+    background-image: linear-gradient(to bottom, #4D00D1, #5D3FD3);
+    grid-area: righttext;
+    margin-top: 0;
+    padding-left: 10px;
+}
