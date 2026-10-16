@@ -1,0 +1,9 @@
+profileVersion = "v1"
+natives = []
+
+[[packages]] 
+id = "Sword-83659299-50a2-4772-b3f3-8a25d6de1918" 
+path = "Sword"
+
+[[supports]]
+game = "nr"
